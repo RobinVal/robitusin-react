@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Login V13</title>
@@ -40,31 +40,31 @@
 					</span>
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
+						<input class="input100" type="text" name="name" placeholder="Name..." value={this.state.fullname} onChange={this.handleChange} >
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input class="input100" type="text" name="email" placeholder="Email addess..." value={this.state.email} onChange={this.handleChange}>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
 						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Username...">
+						<input class="input100" type="text" name="username" placeholder="Username..." value={this.state.username} onChange={this.handleChange}>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input class="input100" type="text" name="pass" placeholder="*************" value={this.state.password} onChange={this.handleChange}>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
 						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<input class="input100" type="text" name="repeat-pass" placeholder="*************" value={this.state.password_confirmation} onChange={this.handleChange}>
 						<span class="focus-input100"></span>
 					</div>
 
