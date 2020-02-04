@@ -1,11 +1,10 @@
-require('../styles/ChatApp.css');
-
 import React from 'react';
 import io from 'socket.io-client';
 import config from '../config';
-
 import Messages from './Messages';
 import ChatInput from './ChatInput';
+require('../styles/ChatApp.css');
+
 
 class ChatApp extends React.Component {
   socket = {};
@@ -14,10 +13,9 @@ class ChatApp extends React.Component {
     this.state = { messages: [] };
     this.sendHandler = this.sendHandler.bind(this);
     
-    // Connect to the server
     this.socket = io(config.api, { query: `username=${props.username}` }).connect();
 
-    // Listen for messages from the server
+    
     this.socket.on('server:message', message => {
       this.addMessage(message);
     });
@@ -29,7 +27,7 @@ class ChatApp extends React.Component {
       message
     };
 
-    // Emit the message to the server
+    
     this.socket.emit('client:message', messageObject);
 
     messageObject.fromMe = true;
@@ -37,12 +35,11 @@ class ChatApp extends React.Component {
   }
 
   addMessage(message) {
-    // Append the message to the component state
+    
     const messages = this.state.messages;
     messages.push(message);
     this.setState({ messages });
   }
-
   render() {
     return (
       <div className="container">
@@ -52,7 +49,7 @@ class ChatApp extends React.Component {
       </div>
     );
   }
-
+  
 }
 ChatApp.defaultProps = {
   username: 'Anonymous'

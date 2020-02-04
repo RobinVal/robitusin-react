@@ -10,8 +10,10 @@ import React, { useContext } from 'react';
 function Home() { 
 
   return (
-    
+      <div className=" wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
       <h1>Hlavní stránka</h1>
+      </div>
+      
     
   );
 }

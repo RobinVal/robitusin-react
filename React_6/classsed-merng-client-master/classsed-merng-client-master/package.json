@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://quiet-reaches-09436.herokuapp.com/"
+  "proxy": "https://quiet-reaches-09436.herokuapp.com/",
+  "devDependencies": {
+    "react-socket-io": "^0.2.5"
+  }
 }

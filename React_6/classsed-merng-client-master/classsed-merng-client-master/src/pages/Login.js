@@ -23,8 +23,9 @@ function Login(props) {
         data: { login: userData }
       }
     ) {
-      context.login(userData);
-      props.history.push('/');
+      //context.login(userData);      
+      props.history.push('/profile');
+      
     },
     onError(err) {
       setErrors(err.graphQLErrors[0].extensions.exception.errors);
@@ -92,4 +93,6 @@ const LOGIN_USER = gql`
   }
 `;
 
+
 export default Login;
+

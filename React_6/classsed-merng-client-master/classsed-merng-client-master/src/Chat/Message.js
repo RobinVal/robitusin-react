@@ -2,7 +2,7 @@ import React from 'react';
 
 class Message extends React.Component {
   render() {
-    // Was the message sent by the current user. If so, add a css class
+    //Přidání zprávy
     const fromMe = this.props.fromMe ? 'from-me' : '';
 
     return (

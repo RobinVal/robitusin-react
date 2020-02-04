@@ -47,15 +47,7 @@ function MenuBar() {
           as={Link}
           to="/register"
           color="orange"
-        />
-        <Menu.Item
-          name="chat"
-          active={activeItem === 'chat'}
-          onClick={handleItemClick}
-          as={Link}
-          to="/chat"
-          color="orange"
-        />
+        />        
       </Menu.Menu>
     </Menu>
   );

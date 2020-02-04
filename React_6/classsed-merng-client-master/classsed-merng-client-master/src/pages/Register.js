@@ -24,7 +24,7 @@ function Register(props) {
         data: { register: userData }
       }
     ) {
-      context.login(userData);
+      //context.login(userData);
       props.history.push('/profile');
     },
     onError(err) {
@@ -41,7 +41,6 @@ function Register(props) {
     <div className="limiter">                
                 <div className="container-login100">
                    <div className="login100-more"></div>  
-                   
                         <div className="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">   
                             <form className="login100-form validate-form" onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
                                 <span className="login100-form-title p-b-59">
@@ -76,9 +75,9 @@ function Register(props) {
                                         <input className="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" required />
                                         <label className="label-checkbox100" htmlFor="ckb1">
                                             <span className="txt1">
-                                                I agree to the
+                                                I agree to the 
                                         <a href="#" className="txt2 hov1">
-                                                    Terms of User
+                                                     Terms of User
                                         </a>
                                             </span>
                                         </label>

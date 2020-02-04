@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
@@ -79,4 +79,4 @@ const CREATE_POST_MUTATION = gql`
   }
 `;
 
-export default PostForm;
+export default PostForm;*/
